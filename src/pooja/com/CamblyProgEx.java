@@ -34,14 +34,7 @@ public class CamblyProgEx {
         //sorting the hashMap in descending order of the values
         //Comparator taking Map.Entry object
         Comparator<Map.Entry<String, Integer>> sortedValue = (o1, o2) -> o2.getValue().compareTo(o1.getValue());
-         /*       new Comparator<>(){
-            @Override
-            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
-                return o2.getValue().compareTo(o1.getValue());
-            }
-        };*/
-
-
+        
         List<Map.Entry<String, Integer>> listOfValues = new ArrayList<>(set);
         Collections.sort(listOfValues, sortedValue);
 
